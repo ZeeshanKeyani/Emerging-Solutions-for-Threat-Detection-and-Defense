@@ -169,13 +169,8 @@ Businesses that invest today in these emerging solutions will not just survive �
 
 
 
-
-Awesome — here’s a **summarized, cleaner, and more visual** Mermaid diagram you can drop straight into a **GitHub `.md`** file. It groups your tools by function and shows a simple **Detect → Analyze → Respond** flow.
-
-````markdown
 # 🛡️ Emerging Solutions for Threat Detection & Defense (Summarized)
 
-```mermaid
 flowchart TD
     %% --------- Core Flow ---------
     A[👁️ Detect] --> B[🔎 Analyze] --> C[🚨 Respond]
@@ -219,7 +214,6 @@ flowchart TD
     class A,B,C step;
 ````
 
-```
 
 ### Notes
 - **Summarized**: tools are clustered into five clear blocks to keep the diagram compact.
