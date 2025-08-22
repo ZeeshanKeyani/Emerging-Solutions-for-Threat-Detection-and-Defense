@@ -167,58 +167,6 @@ Businesses that invest today in these emerging solutions will not just survive �
 
 
 
+Done — I created a Markdown document called **Cybersecurity-Tools-Diagrams.md** on the canvas with a separate Mermaid diagram for each tool you listed.
 
-
-# 🛡️ Emerging Solutions for Threat Detection & Defense (Summarized)
-
-flowchart TD
-    %% --------- Core Flow ---------
-    A[👁️ Detect] --> B[🔎 Analyze] --> C[🚨 Respond]
-
-    %% --------- Groups / Categories ---------
-    subgraph G1[🌐 Network & Visibility]
-      N1["Nmap<br/>Wireshark<br/>Snort<br/>SolarWinds"]
-    end
-
-    subgraph G2[🧪 App & Code Security]
-      A1["Burp Suite<br/>OWASP ZAP<br/>Veracode<br/>Checkmarx"]
-    end
-
-    subgraph G3[☁️ Cloud Security]
-      C1["Prisma Cloud<br/>AWS GuardDuty<br/>Microsoft Defender for Cloud<br/>Cloudflare"]
-    end
-
-    subgraph G4[📊 SIEM & Threat Monitoring]
-      S1["Splunk<br/>IBM QRadar<br/>Wazuh"]
-    end
-
-    subgraph G5[🧭 Incident Response & On-Call]
-      R1["PagerDuty"]
-    end
-
-    %% --------- Data Flow Mapping ---------
-    N1 --> A
-    A1 --> A
-    C1 --> A
-
-    A --> S1
-    S1 --> B
-
-    B --> R1
-    R1 --> C
-
-    %% --------- Visual Emphasis ---------
-    classDef group fill:#f5f7ff,stroke:#7a8cff,stroke-width:1px,rx:10,ry:10,color:#111,font-weight:bold;
-    classDef step fill:#eef9f2,stroke:#2f855a,stroke-width:1.5px,rx:12,ry:12,font-weight:bold;
-    class G1,G2,G3,G4,G5 group;
-    class A,B,C step;
-
-
-
-### Notes
-- **Summarized**: tools are clustered into five clear blocks to keep the diagram compact.
-- **Flow**: telemetry from Network/App/Cloud feeds **Detect**, then centralized in **SIEM** for **Analyze**, and finally **Respond** via **PagerDuty**.
-- Works natively on **GitHub** (Mermaid enabled). If your repo doesn’t render Mermaid, enable it in repo settings or view on GitHub web UI.
-
-Want a **logo-rich version** (badges per tool) below the diagram for extra visual flair on your README?
-
+Open the document (titled *Cybersecurity-tools-diagrams*) to view, copy, or export the diagrams. If you want, I can immediately export selected diagrams as PNG or SVG files — tell me which tools to export and which format.
