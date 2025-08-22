@@ -212,7 +212,7 @@ flowchart TD
     classDef step fill:#eef9f2,stroke:#2f855a,stroke-width:1.5px,rx:12,ry:12,font-weight:bold;
     class G1,G2,G3,G4,G5 group;
     class A,B,C step;
-````
+
 
 
 ### Notes
@@ -221,4 +221,4 @@ flowchart TD
 - Works natively on **GitHub** (Mermaid enabled). If your repo doesn’t render Mermaid, enable it in repo settings or view on GitHub web UI.
 
 Want a **logo-rich version** (badges per tool) below the diagram for extra visual flair on your README?
-```
+
