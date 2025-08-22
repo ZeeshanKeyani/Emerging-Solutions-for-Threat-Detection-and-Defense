@@ -170,53 +170,61 @@ Businesses that invest today in these emerging solutions will not just survive �
 
 
 
-# 🛡️ Cybersecurity Tools Ecosystem
+Awesome — here’s a **summarized, cleaner, and more visual** Mermaid diagram you can drop straight into a **GitHub `.md`** file. It groups your tools by function and shows a simple **Detect → Analyze → Respond** flow.
+
+````markdown
+# 🛡️ Emerging Solutions for Threat Detection & Defense (Summarized)
 
 ```mermaid
 flowchart TD
+    %% --------- Core Flow ---------
+    A[👁️ Detect] --> B[🔎 Analyze] --> C[🚨 Respond]
 
-    subgraph Network_Security
-        Nmap[Nmap]
-        Wireshark[Wireshark]
-        Snort[Snort]
-        SolarWinds[SolarWinds]
+    %% --------- Groups / Categories ---------
+    subgraph G1[🌐 Network & Visibility]
+      N1["Nmap<br/>Wireshark<br/>Snort<br/>SolarWinds"]
     end
 
-    subgraph Application_Security
-        Burp[Burp Suite]
-        ZAP[OWASP ZAP]
-        Veracode[Veracode]
-        Checkmarx[Checkmarx]
+    subgraph G2[🧪 App & Code Security]
+      A1["Burp Suite<br/>OWASP ZAP<br/>Veracode<br/>Checkmarx"]
     end
 
-    subgraph Cloud_Security
-        Prisma[Prisma Cloud]
-        GuardDuty[AWS GuardDuty]
-        Defender[Microsoft Defender for Cloud]
-        Cloudflare[Cloudflare]
+    subgraph G3[☁️ Cloud Security]
+      C1["Prisma Cloud<br/>AWS GuardDuty<br/>Microsoft Defender for Cloud<br/>Cloudflare"]
     end
 
-    subgraph SIEM_and_Monitoring
-        Splunk[Splunk]
-        QRadar[IBM QRadar]
-        Wazuh[Wazuh]
+    subgraph G4[📊 SIEM & Threat Monitoring]
+      S1["Splunk<br/>IBM QRadar<br/>Wazuh"]
     end
 
-    subgraph Incident_Response
-        PagerDuty[PagerDuty]
+    subgraph G5[🧭 Incident Response & On-Call]
+      R1["PagerDuty"]
     end
 
-    %% Relationships
-    Network_Security --> Application_Security
-    Application_Security --> Cloud_Security
-    Cloud_Security --> SIEM_and_Monitoring
-    SIEM_and_Monitoring --> Incident_Response
+    %% --------- Data Flow Mapping ---------
+    N1 --> A
+    A1 --> A
+    C1 --> A
+
+    A --> S1
+    S1 --> B
+
+    B --> R1
+    R1 --> C
+
+    %% --------- Visual Emphasis ---------
+    classDef group fill:#f5f7ff,stroke:#7a8cff,stroke-width:1px,rx:10,ry:10,color:#111,font-weight:bold;
+    classDef step fill:#eef9f2,stroke:#2f855a,stroke-width:1.5px,rx:12,ry:12,font-weight:bold;
+    class G1,G2,G3,G4,G5 group;
+    class A,B,C step;
 ````
 
 ```
 
-👉 This uses **Mermaid diagrams** (supported by GitHub Markdown) to show a **cybersecurity ecosystem diagram** with categories and tools grouped.  
+### Notes
+- **Summarized**: tools are clustered into five clear blocks to keep the diagram compact.
+- **Flow**: telemetry from Network/App/Cloud feeds **Detect**, then centralized in **SIEM** for **Analyze**, and finally **Respond** via **PagerDuty**.
+- Works natively on **GitHub** (Mermaid enabled). If your repo doesn’t render Mermaid, enable it in repo settings or view on GitHub web UI.
 
-Do you want me to also **add icons/logos** for each tool (using shields.io badges) so it looks more visual in GitHub?
+Want a **logo-rich version** (badges per tool) below the diagram for extra visual flair on your README?
 ```
-
