@@ -162,3 +162,66 @@ By 2025, cybersecurity will be more **AI-driven, automated, and cloud-native.** 
 The cybersecurity ecosystem in 2025 is not about using a single tool, but about building an **integrated defense system.** From firewalls to AI-driven detection, zero trust models, cloud security, and SOAR automation, these solutions form a **multi-layered shield** against evolving threats.  
 
 Businesses that invest today in these emerging solutions will not just survive — they will **thrive securely in the digital future.**
+
+
+
+
+
+
+
+
+Got it ✅ — you want a **single block diagram** of all these tools (Nmap, Wireshark, Snort, SolarWinds, Burp Suite, OWASP ZAP, Veracode, Checkmarx, Prisma Cloud, AWS GuardDuty, Microsoft Defender for Cloud, Cloudflare, Splunk, IBM QRadar, Wazuh, PagerDuty) in a format that you can use inside a **GitHub Markdown (.md) file**.
+
+Here’s how we can structure it:
+
+````markdown
+# 🛡️ Cybersecurity Tools Ecosystem
+
+```mermaid
+flowchart TD
+
+    subgraph Network_Security
+        Nmap[Nmap]
+        Wireshark[Wireshark]
+        Snort[Snort]
+        SolarWinds[SolarWinds]
+    end
+
+    subgraph Application_Security
+        Burp[Burp Suite]
+        ZAP[OWASP ZAP]
+        Veracode[Veracode]
+        Checkmarx[Checkmarx]
+    end
+
+    subgraph Cloud_Security
+        Prisma[Prisma Cloud]
+        GuardDuty[AWS GuardDuty]
+        Defender[Microsoft Defender for Cloud]
+        Cloudflare[Cloudflare]
+    end
+
+    subgraph SIEM_and_Monitoring
+        Splunk[Splunk]
+        QRadar[IBM QRadar]
+        Wazuh[Wazuh]
+    end
+
+    subgraph Incident_Response
+        PagerDuty[PagerDuty]
+    end
+
+    %% Relationships
+    Network_Security --> Application_Security
+    Application_Security --> Cloud_Security
+    Cloud_Security --> SIEM_and_Monitoring
+    SIEM_and_Monitoring --> Incident_Response
+````
+
+```
+
+👉 This uses **Mermaid diagrams** (supported by GitHub Markdown) to show a **cybersecurity ecosystem diagram** with categories and tools grouped.  
+
+Do you want me to also **add icons/logos** for each tool (using shields.io badges) so it looks more visual in GitHub?
+```
+
