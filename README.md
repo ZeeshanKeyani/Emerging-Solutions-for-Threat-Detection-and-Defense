@@ -170,11 +170,6 @@ Businesses that invest today in these emerging solutions will not just survive �
 
 
 
-Got it ✅ — you want a **single block diagram** of all these tools (Nmap, Wireshark, Snort, SolarWinds, Burp Suite, OWASP ZAP, Veracode, Checkmarx, Prisma Cloud, AWS GuardDuty, Microsoft Defender for Cloud, Cloudflare, Splunk, IBM QRadar, Wazuh, PagerDuty) in a format that you can use inside a **GitHub Markdown (.md) file**.
-
-Here’s how we can structure it:
-
-````markdown
 # 🛡️ Cybersecurity Tools Ecosystem
 
 ```mermaid
