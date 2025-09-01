@@ -167,6 +167,5 @@ Businesses that invest today in these emerging solutions will not just survive �
 
 
 
-Done — I created a Markdown document called **Cybersecurity-Tools-Diagrams.md** on the canvas with a separate Mermaid diagram for each tool you listed.
 
 Open the document (titled *Cybersecurity-tools-diagrams*) to view, copy, or export the diagrams. If you want, I can immediately export selected diagrams as PNG or SVG files — tell me which tools to export and which format.
